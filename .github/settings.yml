@@ -26,3 +26,7 @@ repository:
 
   # Use a comma-separated list of topics to set on the repo (ensure not to use any caps in the topic string).
   topics: terraform, ibm-cloud, terraform-stack, ibm-cloud-stack
+branches:
+  - name: main
+    protection:
+      enforce_admins: false
