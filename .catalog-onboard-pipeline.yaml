@@ -7,7 +7,7 @@ offerings:
     offering_id: 5f33db8b-9758-4099-80c3-8683b9475946
     variations:
       - name: standard
-        mark_ready: false
+        mark_ready: true
         install_type: fullstack
         format_kind: stack
         validation_type: projects
