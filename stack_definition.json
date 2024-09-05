@@ -52,7 +52,7 @@
         }
       ],
       "name": "1a-primary-da",
-      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.2f03cf1d-3bc8-44fd-bff7-f4345f4b2337"
+      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.cd8ac708-73e5-4e86-acd9-8b9bb82ed323"
     },
     {
       "inputs": [
@@ -78,7 +78,7 @@
         }
       ],
       "name": "1b-primary-da",
-      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.2f03cf1d-3bc8-44fd-bff7-f4345f4b2337"
+      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.cd8ac708-73e5-4e86-acd9-8b9bb82ed323"
     },
     {
       "inputs": [
@@ -104,7 +104,7 @@
         }
       ],
       "name": "secondary-da",
-      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.2f03cf1d-3bc8-44fd-bff7-f4345f4b2337"
+      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.cd8ac708-73e5-4e86-acd9-8b9bb82ed323"
     }
   ]
 }
