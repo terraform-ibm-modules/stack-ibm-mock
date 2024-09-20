@@ -1,30 +1,33 @@
 {
   "inputs": [
     {
-      "name": "ibmcloud_api_key",
+      "name": "resource_group_name",
       "required": true,
-      "type": "password",
+      "type": "string",
+      "default": "Default",
       "hidden": false
     },
     {
-      "name": "resource_group_name",
+      "name": "resource_tags",
       "required": false,
-      "type": "string",
-      "hidden": false
+      "type": "array",
+      "hidden": false,
+      "default": [],
+      "custom_config": {}
     }
   ],
   "outputs": [
     {
       "name": "1a-primary-da",
-      "value": "ref:../../members/1a-primary-da/outputs/resource_group"
+      "value": "ref:../1a-primary-da/outputs/resource_group"
     },
     {
       "name": "1b-primary-da",
-      "value": "ref:../../members/1a-primary-da/outputs/resource_group"
+      "value": "ref:../1a-primary-da/outputs/resource_group"
     },
     {
       "name": "secondary-da",
-      "value": "ref:../../members/secondary-da/outputs/resource_group"
+      "value": "ref:../secondary-da/outputs/resource_group"
     }
   ],
   "members": [
@@ -35,8 +38,12 @@
           "value": "ref:../../inputs/resource_group_name"
         },
         {
+          "name": "region",
+          "value": "us-south"
+        },
+        {
           "name": "resource_tags",
-          "value": "[]"
+          "value": []
         },
         {
           "name": "testing",
@@ -48,7 +55,7 @@
         },
         {
           "name": "ibmcloud_api_key",
-          "value": "ref:../../inputs/ibmcloud_api_key"
+          "value": ""
         }
       ],
       "name": "1a-primary-da",
@@ -61,8 +68,12 @@
           "value": "ref:../../inputs/resource_group_name"
         },
         {
+          "name": "region",
+          "value": "us-south"
+        },
+        {
           "name": "resource_tags",
-          "value": "[]"
+          "value": []
         },
         {
           "name": "testing",
@@ -74,7 +85,7 @@
         },
         {
           "name": "ibmcloud_api_key",
-          "value": "ref:../../inputs/ibmcloud_api_key"
+          "value": ""
         }
       ],
       "name": "1b-primary-da",
@@ -84,11 +95,15 @@
       "inputs": [
         {
           "name": "resource_group",
-          "value": "ref:../../members/1a-primary-da/outputs/resource_group"
+          "value": "ref:../1a-primary-da/outputs/resource_group"
+        },
+        {
+            "name": "region",
+            "value": "us-south"
         },
         {
           "name": "resource_tags",
-          "value": "[]"
+          "value": []
         },
         {
           "name": "testing",
@@ -100,7 +115,7 @@
         },
         {
           "name": "ibmcloud_api_key",
-          "value": "ref:../../inputs/ibmcloud_api_key"
+          "value": ""
         }
       ],
       "name": "secondary-da",
