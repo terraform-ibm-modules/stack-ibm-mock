@@ -59,7 +59,7 @@
         }
       ],
       "name": "1a-primary-da",
-      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.cd8ac708-73e5-4e86-acd9-8b9bb82ed323"
+      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.409c11db-87b8-458a-bf47-24930b087a3a"
     },
     {
       "inputs": [
@@ -89,7 +89,7 @@
         }
       ],
       "name": "1b-primary-da",
-      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.cd8ac708-73e5-4e86-acd9-8b9bb82ed323"
+      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.409c11db-87b8-458a-bf47-24930b087a3a"
     },
     {
       "inputs": [
@@ -98,8 +98,8 @@
           "value": "ref:../1a-primary-da/outputs/resource_group"
         },
         {
-            "name": "region",
-            "value": "us-south"
+          "name": "region",
+          "value": "us-south"
         },
         {
           "name": "resource_tags",
@@ -119,7 +119,7 @@
         }
       ],
       "name": "secondary-da",
-      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.cd8ac708-73e5-4e86-acd9-8b9bb82ed323"
+      "version_locator": "7df1e4ca-d54c-4fd0-82ce-3d13247308cd.409c11db-87b8-458a-bf47-24930b087a3a"
     }
   ]
 }
