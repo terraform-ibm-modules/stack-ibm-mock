@@ -33,7 +33,8 @@
               "required": false
             }
           ],
-          "install_type": "fullstack"
+          "install_type": "fullstack",
+          "ignore_readme": true
         }
       ]
     }
