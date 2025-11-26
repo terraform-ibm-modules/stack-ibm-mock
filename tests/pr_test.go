@@ -1,30 +1,27 @@
 package tests
 
 import (
-	"fmt"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/terraform-ibm-modules/ibmcloud-terratest-wrapper/testprojects"
-	"os"
-	"testing"
 )
 
+const resourceGroup = "geretain-test-resources"
+
 func TestProjectsFullTest(t *testing.T) {
+	t.Parallel()
 
 	options := testprojects.TestProjectOptionsDefault(&testprojects.TestProjectsOptions{
-		Testing:        t,
-		ParallelDeploy: true,
+		Testing:            t,
+		Prefix:             "rag",
+		CatalogProductName: "Mock-Stack",
+		CatalogFlavorName:  "standard",
 	})
-	options.StackMemberInputs = map[string]map[string]interface{}{
-		"primary-da": {
-			"prefix": fmt.Sprintf("p%s", options.Prefix),
-		},
-		"secondary-da": {
-			"prefix": fmt.Sprintf("s%s", options.Prefix),
-		},
-	}
+
 	options.StackInputs = map[string]interface{}{
-		"resource_group_name": options.ResourceGroup,
-		"ibmcloud_api_key":    os.Getenv("TF_VAR_ibmcloud_api_key"),
+		"prefix":              options.Prefix,
+		"resource_group_name": resourceGroup,
 	}
 
 	err := options.RunProjectsTest()
