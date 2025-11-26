@@ -19,15 +19,15 @@
   "outputs": [
     {
       "name": "1a-primary-da",
-      "value": "ref:../1a-primary-da/outputs/resource_group"
+      "value": "ref:../../members/1a-primary-da/outputs/resource_group"
     },
     {
       "name": "1b-primary-da",
-      "value": "ref:../1a-primary-da/outputs/resource_group"
+      "value": "ref:../../members/1a-primary-da/outputs/resource_group"
     },
     {
       "name": "secondary-da",
-      "value": "ref:../secondary-da/outputs/resource_group"
+      "value": "ref:../../members/secondary-da/outputs/resource_group"
     }
   ],
   "members": [
@@ -95,7 +95,7 @@
       "inputs": [
         {
           "name": "resource_group",
-          "value": "ref:../1a-primary-da/outputs/resource_group"
+          "value": "ref:../../members/1a-primary-da/outputs/resource_group"
         },
         {
           "name": "region",
