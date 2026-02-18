@@ -12,6 +12,7 @@
         {
           "label": "Standard",
           "name": "standard",
+          "short_description": "Mock stack DA for testing",
           "architecture": {
             "diagrams": [
               {
