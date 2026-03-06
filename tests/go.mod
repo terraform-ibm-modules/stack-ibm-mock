@@ -2,7 +2,7 @@ module github.com/terraform-ibm-modules/stack-ibm-mock
 
 go 1.25.5
 
-toolchain go1.26.0
+toolchain go1.26.1
 
 require (
 	github.com/stretchr/testify v1.11.1
